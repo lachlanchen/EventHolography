@@ -1,37 +1,63 @@
 [English](README.md) · [العربية](i18n/README.ar.md) · [Español](i18n/README.es.md) · [Français](i18n/README.fr.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Tiếng Việt](i18n/README.vi.md) · [中文 (简体)](i18n/README.zh-Hans.md) · [中文（繁體）](i18n/README.zh-Hant.md) · [Deutsch](i18n/README.de.md) · [Русский](i18n/README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
+
 # EventHolography
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
-![Status](https://img.shields.io/badge/Status-Documentation--First-orange)
-![Repository](https://img.shields.io/badge/Repository-Early--Stage-lightgrey)
-![i18n](https://img.shields.io/badge/i18n-Directory%20Present-success)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-3776ab?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
+![Focus: Documentation-First](https://img.shields.io/badge/Focus-Documentation--First-FCA121?style=for-the-badge)
+![Repository Stage](https://img.shields.io/badge/Stage-Early--Stage-lightgrey?style=for-the-badge)
+![i18n](https://img.shields.io/badge/i18n-Directory%20Present-2ea44f?style=for-the-badge)
+![Status](https://img.shields.io/badge/Repository-Documentation%20First-0f766e?style=for-the-badge&logo=markdown&logoColor=white)
+![Audience](https://img.shields.io/badge/Audience-Researchers%20%26%20Contributors-22c55e?style=for-the-badge&logo=google-translate&logoColor=white)
 
-The repository for **Event-assisted Holographic Imaging** project materials.
+---
+
+Repository for the **Event-assisted Holographic Imaging** project materials.
 
 > Preserved original project description (canonical base):
 > `The repo for the paper Event-assited Holographic Imaging`
 
+## 🧭 Quick Navigation
+
+| Area | Link |
+|---|---|
+| 🎯 Overview | [Overview](#overview-) |
+| 🗂️ Scope | [Project Structure](#project-structure-) |
+| ✅ Prerequisites | [Prerequisites](#prerequisites-) |
+| ▶️ Usage | [Usage](#usage-) |
+| 🧪 Contributing | [Contributing](#contributing-) |
+| ❤️ Support | [❤️ Support](#-support) |
+| 📜 License | [License](#license-) |
+
 ## Overview 🔍
 
-`EventHolography` is currently a documentation-first repository centered on the paper/project theme **Event-assisted Holographic Imaging**.
+`EventHolography` is a **documentation-first** repository dedicated to the paper/project theme **Event-assisted Holographic Imaging**.
 
-At the time of writing, the repository mainly contains:
+As of this repository snapshot, it is intended as an onboarding and communication hub rather than an executable package.
 
-- A minimal root README (expanded here for clarity)
-- An Apache 2.0 license
-- A project-level `.gitignore`
-- An `i18n/` directory for multilingual README variants
+- Canonical status: early-stage research documentation scaffold
+- Public focus: paper context, setup assumptions, and multilingual guidance
+- Scope: repository structure, contribution process, and contribution-readiness for future code/data work
 
-No source code, dependency manifest, or runnable pipeline is currently committed.
+## Repository Snapshot 📈
+
+| Item | Details | Status |
+|---|---|---|
+| `README.md` | Main project documentation | Present and actively maintained |
+| `LICENSE` | Legal terms and reuse policy | Apache License 2.0 |
+| `.gitignore` | Ignore rules for local/build artifacts | Present |
+| `i18n/` | Language-specific README files | Present |
+| `.auto-readme-work/` | Pipeline metadata for README generation | Generated during drafting only |
 
 ## Features ✨
 
-- Clear project identity and scope for Event-assisted holographic imaging research
-- Apache 2.0 licensing for open use and contribution
-- Multilingual-ready documentation layout via `i18n/`
-- Expanded README structure for future code/data onboarding
+- Clear identity for the Event-assisted Holographic Imaging project materials
+- Apache 2.0 licensing for open and permissive reuse
+- Internationalization-ready README layout (`i18n/`)
+- Explicit documentation-first status communicated to users and contributors
+- Forward-compatible structure for adding datasets, scripts, checkpoints, and reproducibility guides later
 
 ## Project Structure 🗂️
 
@@ -40,46 +66,46 @@ EventHolography/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-└── i18n/
+├── i18n/
+└── .auto-readme-work/
 ```
-
-| Path | Purpose | Current State |
-|---|---|---|
-| `README.md` | Main project documentation | Present and actively maintained |
-| `LICENSE` | Legal terms | Apache License 2.0 |
-| `.gitignore` | Ignore rules for local/build artifacts | Present |
-| `i18n/` | Language-specific README files | Directory exists; files may be added over time |
 
 Notes:
 
-- `i18n/` exists and is reserved for language-specific README files.
-- `.auto-readme-work/` exists as pipeline-generated working context and is not currently part of the public project surface.
+- `i18n/` contains the translated versions of the README, including Arabic, Russian, and multiple others.
+- `.auto-readme-work/` is generated during this documentation workflow and is not the canonical public interface.
 
 ## Prerequisites ✅
 
-Current repository state requires only basic tooling:
+Current repository state only needs:
 
-- `git` (to clone and track changes)
-- A Markdown viewer (GitHub UI or local editor)
+- `git` for cloning and local history/branch work
+- A Markdown-aware editor or GitHub viewer
 
-Optional (future-facing assumption based on `.gitignore` patterns):
+Assumption:
 
-- Python tooling may be introduced later, but no Python runtime/dependencies are currently required by committed project files.
+- No Python/Node/Rust toolchain or model/runtime dependency is required today because no executable pipeline is committed.
 
 ## Installation 🛠️
 
-Clone the repository:
+Clone and enter the repository:
 
 ```bash
 git clone <your-repo-url> EventHolography
 cd EventHolography
 ```
 
-If you already have the repository locally, ensure you are on your target branch before editing docs or adding project assets.
+Optional environment for editing:
+
+```bash
+git checkout -b docs/improve-onboarding
+```
+
+If your goal is translation updates, edit both `README.md` and the relevant `i18n/README.xx.md` file pair.
 
 ## Usage ▶️
 
-There is no executable entrypoint yet. Current usage is documentation-oriented:
+There is no executable entrypoint yet, so current usage is documentation-centered:
 
 ```bash
 # Inspect repository contents
@@ -89,88 +115,101 @@ ls -la
 cat README.md
 ```
 
-As code, datasets, or notebooks are added, this section should be expanded with exact run commands.
+As implementation assets arrive, this section should move to run-level instructions (datasets, models, train/infer commands).
 
 ## Configuration ⚙️
 
-No runtime configuration is currently defined.
+There is currently no runtime configuration surface.
 
-Planned future configuration examples (to be added once implementation exists):
+Planned configuration areas (once code arrives):
 
-- Data paths
-- Model/checkpoint paths
-- Camera/event sensor parameters
-- Reconstruction/holography experiment settings
+- Dataset root paths
+- Checkpoint and output directories
+- Holographic reconstruction parameters
+- Event sensor metadata and calibration options
+- Reproducibility presets (seed, splits, augmentations)
 
 ## Examples 📌
 
-Current practical examples are repository-inspection tasks:
+Practical examples in this repository snapshot are repo exploration commands:
 
 ```bash
-# Confirm license
+# Confirm license header
 head -n 5 LICENSE
 
-# Check language folder status
+# Verify language documentation coverage
 ls -la i18n
+
+# Read auto-generated context (optional)
+ls -la .auto-readme-work
 ```
 
-If you expected training/inference/demo examples, they are not yet available in this repository snapshot.
+If you were expecting training/inference examples, this repo currently does not include them yet.
 
 ## Development Notes 🧪
 
-- This is an early-stage repository scaffold.
-- Keep new technical claims tied to committed files (code, configs, scripts, datasets, notebooks, or paper artifacts).
-- Prefer incremental updates to this README rather than replacing sections, so historical context is preserved.
+- This is an early-stage repository scaffold with documentation-first priorities.
+- Keep technical claims tied only to committed assets (files in-tree).
+- Keep README updates incremental, preserving historical context and translation parity.
+- If you add code, place implementation details, expected outputs, and reproducibility steps alongside this documentation.
 
 ## Troubleshooting 🩺
 
 ### “There is nothing to run yet”
 
-This is expected in the current state. No executable workflow has been committed.
+This is expected in the current state. No runnable scripts, configs, notebooks, or datasets are currently committed.
 
-### “I expected translated READMEs”
+### “Where are translated READMEs?”
 
-`i18n/` exists but may not yet contain language files. Add language-specific README files there as they are authored.
+See the `i18n/` directory. If a target language is missing, add `i18n/README.<lang>.md` and sync the language navigation links.
 
-### “The project title spelling differs in places”
+### “Why is the title spelling different?”
 
-The original description includes `Event-assited` (preserved verbatim). Preferred spelling in new text is `Event-assisted`.
+The original phrase in upstream notes is `Event-assited` (with one “s”), which is preserved in the quoted legacy line. This README uses the corrected spelling `Event-assisted` in newly written prose.
+
+### “Should I use the `.auto-readme-work/` folder?”
+
+Treat it as generated metadata for README drafting. It is typically not necessary for standard contributors unless working on documentation automation.
 
 ## Roadmap 🗺️
 
-Planned documentation and repository growth:
-
-- Add paper citation metadata (BibTeX and publication link once available)
-- Add implementation code and reproducible experiment instructions
-- Add dataset/preprocessing documentation
-- Add multilingual README files under `i18n/`
-- Add issue/PR templates and contribution workflow details
+- Add paper metadata (publication link, DOI, and BibTeX citation block)
+- Add implementation entrypoints and reproducible usage instructions once available
+- Add dataset, preprocessing, and experiment configuration documentation
+- Add issue/PR templates and contributor automation docs
+- Keep multilingual README files synchronized with the English source
 
 ## Contributing 🤝
 
 Contributions are welcome.
 
-Until dedicated contribution templates are added, use standard GitHub workflow:
+Until dedicated templates are added, use this standard workflow:
 
 1. Fork the repository
-2. Create a feature/documentation branch
-3. Commit focused changes with clear messages
-4. Open a pull request describing motivation, changes, and validation
+2. Create a focused branch (`docs/<topic>`)
+3. Commit small, reviewable changes with clear messages
+4. Open a PR with motivation, exact file changes, and any verification commands
 
-If introducing new technical instructions, include runnable commands and expected outputs where possible.
+If you add technical instructions, include command-level examples and expected outputs.
 
 ## Citation 📚
 
-Citation details are not yet provided in this repository.
+Citation details are not yet available in-repo.
 
-If this repository corresponds to a published paper, add a `BibTeX` entry and official publication link in this section.
+When the corresponding publication is available, include a `BibTeX` block and publication link in this section.
 
 ## Acknowledgements 🙏
 
 No acknowledgements are currently defined in repository files.
 
-If you have institutional support, collaborators, or funding sources to credit, add them here in a follow-up update.
+If support, institutions, or collaborators are to be credited, add them here in a follow-up update.
+
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
 
 ## License 📄
 
-This project is licensed under the Apache License 2.0. See [LICENSE](./LICENSE).
+This project is licensed under Apache License 2.0. See [LICENSE](./LICENSE).

@@ -1,85 +1,111 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
+
 # EventHolography
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
-![Status](https://img.shields.io/badge/Status-Documentation--First-orange)
-![Repository](https://img.shields.io/badge/Repository-Early--Stage-lightgrey)
-![i18n](https://img.shields.io/badge/i18n-Directory%20Present-success)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-3776ab?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
+![Focus: Documentation-First](https://img.shields.io/badge/Focus-Documentation--First-FCA121?style=for-the-badge)
+![Repository Stage](https://img.shields.io/badge/Stage-Early--Stage-lightgrey?style=for-the-badge)
+![i18n](https://img.shields.io/badge/i18n-Directory%20Present-2ea44f?style=for-the-badge)
+![Status](https://img.shields.io/badge/Repository-Documentation%20First-0f766e?style=for-the-badge&logo=markdown&logoColor=white)
+![Audience](https://img.shields.io/badge/Audience-Researchers%20%26%20Contributors-22c55e?style=for-the-badge&logo=google-translate&logoColor=white)
 
-**Event-assisted Holographic Imaging** 프로젝트 자료를 위한 저장소입니다.
+---
 
-> 원본 프로젝트 설명(정식 기준본) 보존:
+`Event-assisted Holographic Imaging` 프로젝트 자료를 위한 문서형 저장소입니다.
+
+> 보존된 원문 프로젝트 설명(표준 기준):
 > `The repo for the paper Event-assited Holographic Imaging`
 
-## 개요 🔍
+## 🧭 빠른 탐색
 
-`EventHolography`는 현재 **Event-assisted Holographic Imaging**이라는 논문/프로젝트 주제를 중심으로 한 문서 우선(documentation-first) 저장소입니다.
+| 구간 | 링크 |
+|---|---|
+| 🎯 개요 | [Overview](#overview-) |
+| 🗂️ 범위 | [Project Structure](#project-structure-) |
+| ✅ 선행 조건 | [Prerequisites](#prerequisites-) |
+| ▶️ 사용법 | [Usage](#usage-) |
+| 🧪 기여 가이드 | [Contributing](#contributing-) |
+| ❤️ 지원 | [❤️ Support](#-support) |
+| 📜 라이선스 | [License](#license-) |
 
-작성 시점 기준으로, 저장소에는 주로 다음이 포함되어 있습니다.
+## Overview 🔍
 
-- 최소 구성의 루트 README (여기서는 명확성을 위해 확장됨)
-- Apache 2.0 라이선스
-- 프로젝트 수준의 `.gitignore`
-- 다국어 README 변형을 위한 `i18n/` 디렉터리
+`EventHolography`는 **Event-assisted Holographic Imaging** 논문/프로젝트 주제를 다루는 **documentation-first** 저장소입니다.
 
-현재 소스 코드, 의존성 매니페스트, 실행 가능한 파이프라인은 커밋되어 있지 않습니다.
+현재 스냅샷 기준으로, 실행 가능한 패키지라기보다 온보딩과 커뮤니케이션 허브로 사용됩니다.
 
-## 주요 특징 ✨
+- 정식 상태: 초기 단계 연구 문서 골격
+- 공개 초점: 논문 맥락, 설정 가정, 다국어 가이드
+- 범위: 저장소 구조, 기여 절차, 향후 코드/데이터 작업을 위한 기여 준비성
 
-- Event-assisted 홀로그래픽 이미징 연구를 위한 명확한 프로젝트 정체성과 범위
-- 개방적 사용 및 기여를 위한 Apache 2.0 라이선스
-- `i18n/`을 통한 다국어 준비 문서 구조
-- 향후 코드/데이터 온보딩을 위한 확장된 README 구조
+## Repository Snapshot 📈
 
-## 프로젝트 구조 🗂️
+| 항목 | 상세 | 상태 |
+|---|---|---|
+| `README.md` | 프로젝트 핵심 문서 | 존재하며 적극 유지 관리됨 |
+| `LICENSE` | 라이선스 및 재사용 정책 | Apache License 2.0 |
+| `.gitignore` | 로컬/빌드 산출물 무시 규칙 | 존재 |
+| `i18n/` | 언어별 README 파일 | 존재 |
+| `.auto-readme-work/` | README 생성 파이프라인 메타데이터 | 초안 작성 중 생성됨 |
+
+## Features ✨
+
+- `Event-assisted Holographic Imaging` 프로젝트 자료의 정체성을 명확히 정의
+- 오픈 소스 및 재사용이 가능한 Apache 2.0 라이선스 사용
+- 다국어 README 레이아웃 지원 (`i18n/`)
+- 사용자와 기여자에게 documentation-first 상태를 명확히 전달
+- 향후 데이터셋·스크립트·체크포인트·재현 가이드 추가를 고려한 확장형 구조
+
+## Project Structure 🗂️
 
 ```text
 EventHolography/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-└── i18n/
+├── i18n/
+└── .auto-readme-work/
 ```
-
-| 경로 | 용도 | 현재 상태 |
-|---|---|---|
-| `README.md` | 메인 프로젝트 문서 | 존재하며 지속 관리 중 |
-| `LICENSE` | 법적 사용 조건 | Apache License 2.0 |
-| `.gitignore` | 로컬/빌드 산출물 무시 규칙 | 존재 |
-| `i18n/` | 언어별 README 파일 | 디렉터리 존재, 파일은 시간에 따라 추가 가능 |
 
 참고:
 
-- `i18n/`은 존재하며 언어별 README 파일을 위해 예약되어 있습니다.
-- `.auto-readme-work/`는 파이프라인이 생성한 작업 컨텍스트로, 현재 공개 프로젝트 표면에는 포함되지 않습니다.
+- `i18n/`에는 아랍어, 러시아어를 비롯한 다국어 README 번역본이 포함됩니다.
+- `.auto-readme-work/`는 이 문서 작성 워크플로우에서 생성되는 메타데이터이며, 공개 인터페이스의 핵심 일부가 아닙니다.
 
-## 사전 요구사항 ✅
+## Prerequisites ✅
 
-현재 저장소 상태에서는 기본 도구만 필요합니다.
+현재 저장소 상태에서 필요한 항목은 다음과 같습니다.
 
-- `git` (클론 및 변경 이력 추적)
-- Markdown 뷰어 (GitHub UI 또는 로컬 에디터)
+- 저장소 복제 및 브랜치 작업을 위한 `git`
+- Markdown을 인식하는 편집기 또는 GitHub 뷰어
 
-선택 사항(`.gitignore` 패턴 기반의 향후 가정):
+가정:
 
-- 추후 Python 도구 체인이 도입될 수 있으나, 현재 커밋된 프로젝트 파일 기준으로 Python 런타임/의존성은 필요하지 않습니다.
+- 실행형 파이프라인, Python/Node/Rust 도구체인, 모델 런타임 의존성은 현재 커밋되어 있지 않아 필요하지 않습니다.
 
-## 설치 🛠️
+## Installation 🛠️
 
-저장소를 클론합니다.
+저장소를 클론하고 진입합니다.
 
 ```bash
 git clone <your-repo-url> EventHolography
 cd EventHolography
 ```
 
-이미 로컬에 저장소가 있다면, 문서 편집이나 프로젝트 자산 추가 전에 대상 브랜치에 있는지 확인하세요.
+선택적 편집용 브랜치 생성:
 
-## 사용 방법 ▶️
+```bash
+git checkout -b docs/improve-onboarding
+```
 
-아직 실행 가능한 엔트리포인트는 없습니다. 현재 사용 방식은 문서 중심입니다.
+번역 업데이트가 목표인 경우, `README.md`와 해당하는 `i18n/README.xx.md`를 함께 수정하세요.
+
+## Usage ▶️
+
+아직 실행 엔트리포인트가 없으므로 현재 사용은 문서 중심입니다.
 
 ```bash
 # 저장소 내용 확인
@@ -89,88 +115,101 @@ ls -la
 cat README.md
 ```
 
-코드, 데이터셋, 노트북이 추가되면 이 섹션에 정확한 실행 명령을 확장해 넣어야 합니다.
+구현 산출물이 추가되면 이 섹션은 데이터셋, 모델, 학습/추론 실행 명령으로 확장될 예정입니다.
 
-## 설정 ⚙️
+## Configuration ⚙️
 
-현재 정의된 런타임 설정은 없습니다.
+현재는 런타임 설정 항목이 없습니다.
 
-향후 구현이 생긴 뒤 추가할 예정인 설정 예시:
+향후 코드가 추가되면 예정된 설정 영역:
 
-- 데이터 경로
-- 모델/체크포인트 경로
-- 카메라/이벤트 센서 파라미터
-- 재구성/홀로그래피 실험 설정
+- 데이터셋 루트 경로
+- 체크포인트 및 출력 디렉토리
+- 홀로그래픽 재구성 파라미터
+- 이벤트 센서 메타데이터 및 캘리브레이션 옵션
+- 재현성 사전 설정(시드, 분할, 데이터 증강)
 
-## 예시 📌
+## Examples 📌
 
-현재 실용적인 예시는 저장소 점검 작업입니다.
+이 저장소 스냅샷에서의 실용 예시는 저장소 탐색 명령입니다.
 
 ```bash
-# 라이선스 확인
+# 라이선스 헤더 확인
 head -n 5 LICENSE
 
-# 언어 폴더 상태 확인
+# 언어별 문서 커버리지 확인
 ls -la i18n
+
+# 자동 생성 메타데이터 확인(선택)
+ls -la .auto-readme-work
 ```
 
-학습/추론/데모 예시를 기대했다면, 이 저장소 스냅샷에는 아직 제공되지 않습니다.
+학습/추론 예제를 기대했다면, 현재 저장소에는 아직 포함되지 않았습니다.
 
-## 개발 노트 🧪
+## Development Notes 🧪
 
-- 이 저장소는 초기 단계 스캐폴드입니다.
-- 새로운 기술적 주장은 커밋된 파일(코드, 설정, 스크립트, 데이터셋, 노트북, 논문 아티팩트)에 근거해 작성하세요.
-- 이 README는 섹션을 통째로 교체하기보다 점진적으로 업데이트해, 이력 맥락을 보존하는 방식을 권장합니다.
+- 초기 단계의 문서 우선 저장소입니다.
+- 기술적 주장은 저장소에 실제로 커밋된 자산(트리 내 파일)에만 근거해야 합니다.
+- README는 점진적으로 갱신해 이력 맥락을 유지하세요.
+- 코드가 추가되면 구현 세부사항, 기대 출력, 재현 절차를 문서에 함께 배치하세요.
 
-## 문제 해결 🩺
+## Troubleshooting 🩺
 
-### "아직 실행할 것이 없습니다"
+### "아직 실행할 항목이 없습니다"
 
-현재 상태에서는 정상입니다. 실행 가능한 워크플로가 커밋되어 있지 않습니다.
+현재 상태에서는 이것이 정상입니다. 현재 커밋에는 실행 가능한 스크립트, 설정, 노트북, 데이터셋이 없습니다.
 
-### "번역된 README가 있을 줄 알았습니다"
+### "번역된 README는 어디에 있나요?"
 
-`i18n/`은 존재하지만 언어 파일이 아직 없을 수 있습니다. 작성되는 대로 해당 위치에 언어별 README 파일을 추가하세요.
+`i18n/` 디렉토리를 확인하세요. 대상 언어가 없다면 `i18n/README.<lang>.md`를 추가하고 언어 링크를 동기화하세요.
 
-### "프로젝트 제목 철자가 일부 다릅니다"
+### "제목 철자가 다르게 보이는 이유는?"
 
-원본 설명에는 `Event-assited`가 포함되어 있으며(원문 그대로 보존), 새 텍스트에서는 `Event-assisted` 표기를 권장합니다.
+상위 원본 노트의 표기 `Event-assited`(s 하나 누락)는 수정하지 않고 그대로 보존된 인용입니다. 새로 작성한 본문에서는 `Event-assisted`를 사용합니다.
 
-## 로드맵 🗺️
+### "`.auto-readme-work/` 폴더를 써야 하나요?"
 
-예정된 문서 및 저장소 확장 계획:
+README 초안 생성을 위한 생성 메타데이터로 처리하세요. 보통은 문서 자동화 작업을 하지 않는 기여자가 굳이 다룰 필요는 없습니다.
 
-- 논문 인용 메타데이터 추가(BibTeX 및 출판 링크 확보 시)
-- 구현 코드 및 재현 가능한 실험 지침 추가
-- 데이터셋/전처리 문서 추가
-- `i18n/` 하위에 다국어 README 파일 추가
-- 이슈/PR 템플릿 및 기여 워크플로 세부 정보 추가
+## Roadmap 🗺️
 
-## 기여하기 🤝
+- 논문 메타데이터(출판 링크, DOI, BibTeX 인용 블록) 추가
+- 사용 가능한 구현 엔트리포인트 및 재현 가능한 사용법 작성
+- 데이터셋, 전처리, 실험 설정 문서 추가
+- 이슈/PR 템플릿 및 기여 자동화 문서 추가
+- 다국어 README를 영어 원본과 동기화 상태로 유지
 
-기여를 환영합니다.
+## Contributing 🤝
 
-전용 기여 템플릿이 추가되기 전까지는 표준 GitHub 워크플로를 사용하세요.
+기여는 언제나 환영합니다.
 
-1. 저장소를 포크합니다.
-2. 기능/문서화 브랜치를 생성합니다.
-3. 명확한 메시지로 범위가 분명한 변경을 커밋합니다.
-4. 동기, 변경 사항, 검증 내용을 설명하는 Pull Request를 엽니다.
+전용 템플릿이 추가되기 전까지는 다음의 표준 흐름을 사용하세요.
 
-새로운 기술 지침을 추가하는 경우, 가능하면 실행 가능한 명령과 예상 출력도 함께 포함하세요.
+1. 저장소 포크
+2. 목적 중심 브랜치 생성 (`docs/<topic>`)
+3. 작은 단위로 리뷰 가능한 변경을 명확한 메시지로 커밋
+4. 의도, 정확한 파일 변경사항, 검증 명령을 포함해 PR 열기
 
-## 인용 📚
+기술 지침을 추가할 경우, 명령 단위 예시와 기대 출력도 함께 넣으세요.
 
-이 저장소에는 아직 인용 정보가 제공되지 않습니다.
+## Citation 📚
 
-이 저장소가 출판된 논문에 대응된다면, 이 섹션에 `BibTeX` 항목과 공식 출판 링크를 추가하세요.
+이 저장소에는 아직 인용 정보가 없습니다.
 
-## 감사의 말 🙏
+해당 출판물이 공개되면 이 섹션에 `BibTeX` 블록과 출판 링크를 추가하세요.
 
-현재 저장소 파일에는 정의된 감사 항목이 없습니다.
+## Acknowledgements 🙏
 
-기관 지원, 협업자, 연구비 출처를 표기해야 한다면 후속 업데이트에서 여기에 추가하세요.
+현재 저장소 파일에는 감사 항목이 정의되어 있지 않습니다.
 
-## 라이선스 📄
+지원 기관, 기관명, 협력자가 있으면 후속 업데이트에서 추가합니다.
 
-이 프로젝트는 Apache License 2.0에 따라 라이선스가 부여됩니다. [LICENSE](./LICENSE)를 참고하세요.
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
+
+## License 📄
+
+이 프로젝트는 Apache License 2.0에 따라 라이선스됩니다. 자세한 내용은 [LICENSE](./LICENSE)를 확인하세요.

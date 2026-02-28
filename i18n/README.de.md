@@ -1,39 +1,66 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
 # EventHolography
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](../LICENSE)
-![Status](https://img.shields.io/badge/Status-Documentation--First-orange)
-![Repository](https://img.shields.io/badge/Repository-Early--Stage-lightgrey)
-![i18n](https://img.shields.io/badge/i18n-Directory%20Present-success)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-3776ab?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
+![Focus: Documentation-First](https://img.shields.io/badge/Focus-Documentation--First-FCA121?style=for-the-badge)
+![Repository Stage](https://img.shields.io/badge/Stage-Early--Stage-lightgrey?style=for-the-badge)
+![i18n](https://img.shields.io/badge/i18n-Directory%20Present-2ea44f?style=for-the-badge)
+![Status](https://img.shields.io/badge/Repository-Documentation%20First-0f766e?style=for-the-badge&logo=markdown&logoColor=white)
+![Audience](https://img.shields.io/badge/Audience-Researchers%20%26%20Contributors-22c55e?style=for-the-badge&logo=google-translate&logoColor=white)
 
-Das Repository für Projektmaterialien zu **Event-assisted Holographic Imaging**.
+---
+
+Repository für die Projektmaterialien zur **Event-assisted Holographic Imaging**.
 
 > Beibehaltene ursprüngliche Projektbeschreibung (kanonische Basis):
 > `The repo for the paper Event-assited Holographic Imaging`
 
+## 🧭 Schnelle Navigation
+
+| Bereich | Link |
+|---|---|
+| 🎯 Überblick | [Überblick](#overview-) |
+| 🗂️ Umfang | [Projektstruktur](#project-structure-) |
+| ✅ Voraussetzungen | [Voraussetzungen](#prerequisites-) |
+| ▶️ Nutzung | [Nutzung](#usage-) |
+| 🧪 Mitwirken | [Mitwirken](#contributing-) |
+| ❤️ Support | [❤️ Support](#-support) |
+| 📜 Lizenz | [Lizenz](#license-) |
+
+<a id="overview-"></a>
 ## Überblick 🔍
 
-`EventHolography` ist derzeit ein dokumentationsorientiertes Repository rund um das Paper-/Projektthema **Event-assisted Holographic Imaging**.
+`EventHolography` ist ein **dokumentationsorientiertes** Repository zum Projekt/Thema **Event-assisted Holographic Imaging**.
 
-Zum Zeitpunkt der Erstellung enthält das Repository hauptsächlich:
+Zum Zeitpunkt dieses Repository-Schnappschusses dient es als Onboarding- und Kommunikations-Hub statt als ausführbares Paket.
 
-- Ein minimales README im Root-Verzeichnis (hier zur besseren Verständlichkeit erweitert)
-- Eine Apache-2.0-Lizenz
-- Eine projektweite `.gitignore`
-- Ein Verzeichnis `i18n/` für mehrsprachige README-Varianten
+- Kanonischer Status: frühes Dokumentations-Scaffold für Forschungsarbeit
+- Öffentliches Fokusfeld: Paper-Kontext, Setup-Annahmen und mehrsprachige Anleitung
+- Umfang: Repository-Struktur, Beitragspfad und Vorbereitungsgrad für zukünftige Code-/Daten-Arbeit
 
-Aktuell sind kein Quellcode, kein Abhängigkeits-Manifest und keine ausführbare Pipeline eingecheckt.
+## Repository-Snapshot 📈
+
+| Element | Details | Status |
+|---|---|---|
+| `README.md` | Dokumentation des Hauptprojekts | Vorhanden und aktiv gepflegt |
+| `LICENSE` | Rechtliche Bedingungen und Nutzungsregeln | Apache License 2.0 |
+| `.gitignore` | Regeln zum Ausschluss lokaler/build-bezogener Artefakte | Vorhanden |
+| `i18n/` | Sprachspezifische README-Dateien | Vorhanden |
+| `.auto-readme-work/` | Pipeline-Metadaten für README-Generierung | Wird nur während der Erstellung erzeugt |
 
 ## Funktionen ✨
 
-- Klare Projektidentität und -abgrenzung für Forschung zu Event-assisted holographischer Bildgebung
-- Apache-2.0-Lizenz für offene Nutzung und Beiträge
-- Mehrsprachig vorbereitete Dokumentationsstruktur über `i18n/`
-- Erweiterte README-Struktur für künftiges Onboarding von Code und Daten
+- Klare Identität für Projektmaterialien rund um **Event-assisted Holographic Imaging**
+- Apache-2.0-Lizenz für offene und permissive Wiederverwendung
+- Internationalisierungstaugliches README-Layout (`i18n/`)
+- Explizite Dokumentations-first-Ausrichtung für Nutzer:innen und Mitwirkende
+- Zukunftsfähige Struktur zum späteren Hinzufügen von Datensätzen, Skripten, Checkpoints und Reproduzierbarkeitsanleitungen
 
+<a id="project-structure-"></a>
 ## Projektstruktur 🗂️
 
 ```text
@@ -41,46 +68,31 @@ EventHolography/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-└── i18n/
+├── i18n/
+└── .auto-readme-work/
 ```
-
-| Pfad | Zweck | Aktueller Stand |
-|---|---|---|
-| `README.md` | Hauptdokumentation des Projekts | Vorhanden und aktiv gepflegt |
-| `LICENSE` | Rechtliche Bedingungen | Apache License 2.0 |
-| `.gitignore` | Ignore-Regeln für lokale/Build-Artefakte | Vorhanden |
-| `i18n/` | Sprachspezifische README-Dateien | Verzeichnis existiert; Dateien können mit der Zeit ergänzt werden |
 
 Hinweise:
 
-- `i18n/` existiert und ist für sprachspezifische README-Dateien vorgesehen.
-- `.auto-readme-work/` existiert als pipeline-generierter Arbeitskontext und gehört derzeit nicht zur öffentlichen Projektoberfläche.
+- `i18n/` enthält die übersetzten Versionen der README-Dateien, darunter bereits Arabisch, Russisch und weitere Sprachen.
+- `.auto-readme-work/` wird während dieses Dokumentations-Workflows erzeugt und ist nicht die kanonische öffentliche Oberfläche.
 
+<a id="prerequisites-"></a>
 ## Voraussetzungen ✅
 
-Der aktuelle Zustand des Repositories erfordert nur grundlegende Werkzeuge:
+Der aktuelle Zustand des Repositories benötigt nur:
 
-- `git` (zum Klonen und Nachverfolgen von Änderungen)
-- Einen Markdown-Viewer (GitHub UI oder lokaler Editor)
+- `git` für das Klonen und die lokale Versionsverwaltung
+- Ein Markdown-fähiges Editor- oder GitHub-Interface zum Lesen
 
-Optional (zukunftsgerichtete Annahme basierend auf `.gitignore`-Mustern):
+Annahmen:
 
-- Python-Tooling könnte später hinzukommen, derzeit sind jedoch keine Python-Laufzeit/Abhängigkeiten durch eingecheckte Projektdateien erforderlich.
+- Da derzeit keine ausführbare Pipeline vorhanden ist, werden keine Python-/Node-/Rust-Toolchain oder Laufzeitabhängigkeiten benötigt.
 
-## Installation 🛠️
-
-Repository klonen:
-
-```bash
-git clone <your-repo-url> EventHolography
-cd EventHolography
-```
-
-Wenn du das Repository bereits lokal hast, stelle vor dem Bearbeiten der Dokumentation oder dem Hinzufügen von Projektartefakten sicher, dass du auf deinem Ziel-Branch bist.
-
+<a id="usage-"></a>
 ## Nutzung ▶️
 
-Es gibt noch keinen ausführbaren Einstiegspunkt. Die aktuelle Nutzung ist dokumentationsorientiert:
+Es gibt noch keinen ausführbaren Entry Point, daher ist die aktuelle Nutzung dokumentationszentriert:
 
 ```bash
 # Inspect repository contents
@@ -90,88 +102,103 @@ ls -la
 cat README.md
 ```
 
-Sobald Code, Datensätze oder Notebooks hinzugefügt werden, sollte dieser Abschnitt um exakte Ausführungsbefehle erweitert werden.
+Sobald Implementierungsartefakte verfügbar sind, sollte dieser Abschnitt auf ausführbare Anweisungen erweitert werden (Datensätze, Modelle, Trainings-/Inferenz-Befehle).
 
 ## Konfiguration ⚙️
 
-Derzeit ist keine Laufzeitkonfiguration definiert.
+Es gibt aktuell keine Laufzeitkonfiguration.
 
-Geplante zukünftige Konfigurationsbeispiele (werden hinzugefügt, sobald eine Implementierung existiert):
+Geplante Konfigurationsbereiche (nach Bereitstellung von Code):
 
-- Datenpfade
-- Modell-/Checkpoint-Pfade
-- Kamera-/Event-Sensor-Parameter
-- Rekonstruktions-/Holographie-Experiment-Einstellungen
+- Wurzelpfade zu Datensätzen
+- Checkpoint- und Ausgabeverzeichnisse
+- Holographische Rekonstruktionsparameter
+- Metadaten und Kalibrierung des Event-Sensors
+- Reproduzierbarkeits-Presets (Seed, Splits, Augmentationen)
 
 ## Beispiele 📌
 
-Aktuelle praktische Beispiele sind Aufgaben zur Repository-Inspektion:
+Praktische Beispiele in diesem Repository-Schnappschuss sind Befehle zur Repo-Erkundung:
 
 ```bash
-# Confirm license
+# Confirm license header
 head -n 5 LICENSE
 
-# Check language folder status
+# Verify language documentation coverage
 ls -la i18n
+
+# Read auto-generated context (optional)
+ls -la .auto-readme-work
 ```
 
-Falls du Trainings-/Inference-/Demo-Beispiele erwartet hast: Diese sind in dieser Repository-Momentaufnahme noch nicht verfügbar.
+Wenn du Trainings-/Inferenzbeispiele erwartest, sind diese im aktuellen Stand noch nicht enthalten.
 
-## Entwicklungshinweise 🧪
+## Entwicklungsnotizen 🧪
 
-- Dies ist ein Repository-Gerüst in einer frühen Phase.
-- Neue technische Aussagen sollten an eingecheckte Dateien gebunden sein (Code, Konfigurationen, Skripte, Datensätze, Notebooks oder Paper-Artefakte).
-- Bevorzuge inkrementelle Aktualisierungen dieses READMEs statt kompletter Ersetzungen von Abschnitten, damit historischer Kontext erhalten bleibt.
+- Dies ist ein frühes Repository-Scaffold mit dokumentationszentrierten Prioritäten.
+- Technische Aussagen sollten ausschließlich auf tatsächlich vorhandene Artefakte im Repository verweisen.
+- README-Änderungen sollten inkrementell erfolgen und historischen Kontext sowie Übersetzungskonsistenz bewahren.
+- Wenn Code hinzugefügt wird, sollten Implementierungsdetails, erwartete Ausgaben und Reproduzierbarkeitsschritte zusammen mit der Dokumentation ergänzt werden.
 
 ## Fehlerbehebung 🩺
 
-### „Es gibt noch nichts auszuführen“
+### „Es gibt noch nichts auszuführen"
 
-Das ist im aktuellen Zustand erwartbar. Es wurde noch kein ausführbarer Workflow eingecheckt.
+Das ist im aktuellen Stand zu erwarten. Es sind keine ausführbaren Skripte, Konfigurationen, Notebooks oder Datensätze eingecheckt.
 
-### „Ich habe übersetzte READMEs erwartet“
+### „Wo sind die übersetzten README-Dateien?"
 
-`i18n/` existiert, enthält aber möglicherweise noch keine Sprachdateien. Füge dort sprachspezifische README-Dateien hinzu, sobald sie erstellt wurden.
+Schau in das Verzeichnis `i18n/`. Falls eine Zielsprache fehlt, lege `i18n/README.<lang>.md` an und synchronisiere die Sprach-Navigation.
 
-### „Der Projekttitel ist unterschiedlich geschrieben“
+### „Warum ist die Titel-Rechtschreibung unterschiedlich?"
 
-Die ursprüngliche Beschreibung enthält `Event-assited` (wörtlich beibehalten). Die bevorzugte Schreibweise in neuem Text ist `Event-assisted`.
+Der ursprüngliche Begriff in den Upstream-Notizen lautet `Event-assited` (mit einem „s“). Diese Schreibweise wird im wörtlich übernommenen Legacy-Zitat belassen. In neu verfasstem Fließtext verwendet diese README die korrigierte Form `Event-assisted`.
+
+### „Sollte ich den `.auto-readme-work/`-Ordner verwenden?"
+
+Behandle ihn als generierte Metadaten für die README-Erstellung. Für reguläre Beiträge ist er in der Regel nicht nötig, außer bei Arbeit an Dokumentationsautomatisierung.
 
 ## Roadmap 🗺️
 
-Geplantes Wachstum von Dokumentation und Repository:
+- Paper-Metadaten ergänzen (Publikationslink, DOI, BibTeX-Zitationsblock)
+- Umsetzungseintrittspunkte und reproduzierbare Nutzungshinweise ergänzen, sobald verfügbar
+- Dokumentation zu Datensatz, Preprocessing und Experimentkonfiguration hinzufügen
+- Issue/PR-Templates und Beiträge-Automatisierung dokumentieren
+- Mehrsprachige README-Dateien mit dem Englischen synchron halten
 
-- Hinzufügen von Zitiermetadaten zum Paper (BibTeX und Publikationslink, sobald verfügbar)
-- Hinzufügen von Implementierungscode und reproduzierbaren Experimentanleitungen
-- Hinzufügen von Datensatz-/Preprocessing-Dokumentation
-- Hinzufügen mehrsprachiger README-Dateien unter `i18n/`
-- Hinzufügen von Issue-/PR-Templates und Details zum Contribution-Workflow
-
+<a id="contributing-"></a>
 ## Mitwirken 🤝
 
 Beiträge sind willkommen.
 
-Bis dedizierte Contribution-Templates hinzugefügt sind, nutze den Standard-GitHub-Workflow:
+Bis dedizierte Templates vorliegen, nutze bitte diesen Standard-Workflow:
 
-1. Forke das Repository
-2. Erstelle einen Feature-/Dokumentations-Branch
-3. Committe fokussierte Änderungen mit klaren Nachrichten
-4. Öffne einen Pull Request, der Motivation, Änderungen und Validierung beschreibt
+1. Repository forken
+2. Einen fokussierten Branch erstellen (`docs/<thema>`)
+3. Kleine, prüfbare Änderungen mit klaren Commit-Meldungen committen
+4. Eine PR mit Motivation, exakten Dateichanges und möglichen Verifikationsbefehlen öffnen
 
-Wenn du neue technische Anleitungen einführst, füge nach Möglichkeit ausführbare Befehle und erwartete Ausgaben hinzu.
+Wenn du technische Anleitungen ergänzt, bitte konkrete Befehle auf Kommandoebene und erwartete Ausgaben aufnehmen.
 
 ## Zitation 📚
 
-In diesem Repository sind derzeit keine Zitierdetails hinterlegt.
+Zitationsangaben sind im Repository noch nicht verfügbar.
 
-Falls dieses Repository einem veröffentlichten Paper entspricht, füge in diesem Abschnitt einen `BibTeX`-Eintrag und den offiziellen Publikationslink hinzu.
+Wenn die zugehörige Publikation vorliegt, füge in diesem Abschnitt einen `BibTeX`-Block und den Publikationslink hinzu.
 
 ## Danksagung 🙏
 
-In den Repository-Dateien sind derzeit keine Danksagungen definiert.
+Es sind derzeit keine Danksagungen in den Repository-Dateien definiert.
 
-Wenn institutionelle Unterstützung, Mitwirkende oder Förderquellen genannt werden sollen, ergänze sie hier in einem Folge-Update.
+Falls Unterstützer, Institutionen oder Kooperationspartner genannt werden sollen, ergänze diese in einem Folge-Update.
 
 ## Lizenz 📄
 
-Dieses Projekt ist unter der Apache License 2.0 lizenziert. Siehe [LICENSE](../LICENSE).
+Dieses Projekt ist unter der Apache License 2.0 lizenziert. Siehe [LICENSE](./LICENSE).
+
+
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |

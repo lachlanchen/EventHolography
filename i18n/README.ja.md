@@ -1,85 +1,112 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
+
 # EventHolography
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
-![Status](https://img.shields.io/badge/Status-Documentation--First-orange)
-![Repository](https://img.shields.io/badge/Repository-Early--Stage-lightgrey)
-![i18n](https://img.shields.io/badge/i18n-Directory%20Present-success)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-3776ab?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
+![Focus: Documentation-First](https://img.shields.io/badge/Focus-Documentation--First-FCA121?style=for-the-badge)
+![Repository Stage](https://img.shields.io/badge/Stage-Early--Stage-lightgrey?style=for-the-badge)
+![i18n](https://img.shields.io/badge/i18n-Directory%20Present-2ea44f?style=for-the-badge)
+![Status](https://img.shields.io/badge/Repository-Documentation%20First-0f766e?style=for-the-badge&logo=markdown&logoColor=white)
+![Audience](https://img.shields.io/badge/Audience-Researchers%20%26%20Contributors-22c55e?style=for-the-badge&logo=google-translate&logoColor=white)
 
-**Event-assisted Holographic Imaging** プロジェクト資料のためのリポジトリです。
+---
 
-> 元のプロジェクト説明（正本として保持）:
+**Event-assisted Holographic Imaging** の資料をまとめたプロジェクト用リポジトリです。
+
+> 保存された原文の説明（標準ベース）:
 > `The repo for the paper Event-assited Holographic Imaging`
 
-## 概要 🔍
+## 🧭 クイックナビゲーション
 
-`EventHolography` は現在、**Event-assisted Holographic Imaging** という論文／プロジェクトテーマを中心としたドキュメント先行のリポジトリです。
+| エリア | リンク |
+|---|---|
+| 🎯 Overview | [Overview](#overview-) |
+| 🗂️ Scope | [Project Structure](#project-structure-) |
+| ✅ Prerequisites | [Prerequisites](#prerequisites-) |
+| ▶️ Usage | [Usage](#usage-) |
+| 🧪 Contributing | [Contributing](#contributing-) |
+| ❤️ Support | [❤️ Support](#-support) |
+| 📜 License | [License](#license-) |
 
-現時点でこのリポジトリに主に含まれているもの:
+## Overview 🔍
 
-- 最小構成のルート README（ここでは分かりやすさのため拡張）
-- Apache 2.0 ライセンス
-- プロジェクトレベルの `.gitignore`
-- 多言語 README バリアント用の `i18n/` ディレクトリ
+`EventHolography` は、**Event-assisted Holographic Imaging** の論文・プロジェクトテーマを扱う、
+**documentation-first（ドキュメント優先）** リポジトリです。
 
-現在のところ、ソースコード、依存関係マニフェスト、実行可能なパイプラインはコミットされていません。
+このリポジトリの時点では、実行可能なパッケージというより、オンボーディングと情報共有を目的としたハブとして扱っています。
 
-## 特徴 ✨
+- 正式なステータス: 研究初期段階のドキュメントスケルトン
+- 公開方針: 論文文脈、セットアップ前提、複数言語対応
+- 対象範囲: リポジトリ構成、コントリビューション手順、将来の実装・データ追加に備えた整備
 
-- Event-assisted holographic imaging 研究に向けた、明確なプロジェクトのアイデンティティとスコープ
-- オープンな利用とコントリビューションを可能にする Apache 2.0 ライセンス
-- `i18n/` による多言語対応ドキュメント構成
-- 将来のコード／データ導入に備えた拡張済み README 構成
+## Repository Snapshot 📈
 
-## プロジェクト構成 🗂️
+| 項目 | 詳細 | ステータス |
+|---|---|---|
+| `README.md` | メインプロジェクトの説明書 | 存在し、更新されている |
+| `LICENSE` | 利用条件と再利用ルール | Apache License 2.0 |
+| `.gitignore` | ローカル／ビルド成果物の除外ルール | 存在 |
+| `i18n/` | 言語別 README ファイル | 存在 |
+| `.auto-readme-work/` | README生成のパイプライン情報 | 作成時のみ |
+
+## Features ✨
+
+- Event-assisted Holographic Imaging の公開資料における明確なアイデンティティ
+- オープンで実用的な再利用を支える Apache 2.0 ライセンス
+- 国際化対応を前提とした README レイアウト（`i18n/`）
+- ユーザーとコントリビューター向けに documentation-first な状態を明示
+- 将来のデータセット、スクリプト、チェックポイント、再現性ガイド追加に備えた前向きな構造
+
+## Project Structure 🗂️
 
 ```text
 EventHolography/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-└── i18n/
+├── i18n/
+└── .auto-readme-work/
 ```
 
-| Path | Purpose | Current State |
-|---|---|---|
-| `README.md` | メインのプロジェクトドキュメント | 存在し、継続的にメンテナンス中 |
-| `LICENSE` | 法的条件 | Apache License 2.0 |
-| `.gitignore` | ローカル／ビルド成果物の除外ルール | 存在 |
-| `i18n/` | 言語別 README ファイル | ディレクトリは存在。ファイルは今後追加可能 |
+Notes:
 
-注記:
+- `i18n/` には英語版READMEの翻訳版（アラビア語、ロシア語など）が含まれます。
+- `.auto-readme-work/` は、このドキュメント作成ワークフローで生成されるメタデータであり、公開向けインターフェースの一部ではありません。
 
-- `i18n/` は存在し、言語別 README ファイル用に確保されています。
-- `.auto-readme-work/` はパイプライン生成の作業コンテキストとして存在し、現在は公開プロジェクトの表面には含まれていません。
+## Prerequisites ✅
 
-## 前提条件 ✅
+現時点のリポジトリ状態で必要なのは以下のみです:
 
-現在のリポジトリ状態で必要なのは基本的なツールのみです:
+- `git`（クローンとローカルでの履歴/ブランチ操作用）
+- Markdown を解釈できるエディターまたは GitHub ビューアー
 
-- `git`（クローンと変更追跡のため）
-- Markdown ビューア（GitHub UI またはローカルエディタ）
+前提条件:
 
-任意（`.gitignore` パターンに基づく将来想定）:
+- 今日時点で Python / Node / Rust のツールチェーンやモデル実行環境は不要です。実行可能なパイプラインはまだコミットされていないためです。
 
-- 将来的に Python ツールチェーンが導入される可能性はありますが、現在コミット済みファイルで Python ランタイム／依存関係は必須ではありません。
+## Installation 🛠️
 
-## インストール 🛠️
-
-リポジトリをクローン:
+リポジトリをクローンして入る手順:
 
 ```bash
 git clone <your-repo-url> EventHolography
 cd EventHolography
 ```
 
-すでにローカルにリポジトリがある場合は、ドキュメント編集やプロジェクト資産追加の前に、対象ブランチにいることを確認してください。
+編集用の任意設定:
 
-## 使い方 ▶️
+```bash
+git checkout -b docs/improve-onboarding
+```
 
-まだ実行可能なエントリーポイントはありません。現在の利用はドキュメント中心です:
+翻訳更新が目的の場合は、`README.md` と該当する `i18n/README.xx.md` の両方を更新してください。
+
+## Usage ▶️
+
+まだ実行エントリポイントはありません。現在の利用はドキュメント中心です。
 
 ```bash
 # Inspect repository contents
@@ -89,88 +116,101 @@ ls -la
 cat README.md
 ```
 
-コード、データセット、ノートブックが追加されたら、このセクションに正確な実行コマンドを追記してください。
+実装資産が追加され次第、このセクションは（データセット・モデル・学習／推論コマンドを含む）実行手順ベースへ更新されます。
 
-## 設定 ⚙️
+## Configuration ⚙️
 
-現在、実行時設定は定義されていません。
+現在、ランタイム設定の公開インターフェースはありません。
 
-将来の設定例（実装ができ次第追記予定）:
+将来追加される予定の設定領域:
 
-- データパス
-- モデル／チェックポイントパス
-- カメラ／イベントセンサーのパラメータ
-- 再構成／ホログラフィ実験設定
+- データセットのルートパス
+- チェックポイントと出力先ディレクトリ
+- ホログラム再構成パラメータ
+- イベントセンサーのメタデータとキャリブレーション設定
+- 再現性プリセット（シード、分割、データ拡張など）
 
-## 例 📌
+## Examples 📌
 
-現時点での実用例は、リポジトリ確認タスクです:
+このリポジトリの実用例は、主にリポジトリ探索コマンドです:
 
 ```bash
-# Confirm license
+# Confirm license header
 head -n 5 LICENSE
 
-# Check language folder status
+# Verify language documentation coverage
 ls -la i18n
+
+# Read auto-generated context (optional)
+ls -la .auto-readme-work
 ```
 
-学習／推論／デモの例を期待していた場合、現時点のリポジトリスナップショットではまだ提供されていません。
+学習・推論の例を期待する場合は、現時点ではこのリポジトリにはまだ含まれていません。
 
-## 開発メモ 🧪
+## Development Notes 🧪
 
-- これは初期段階のリポジトリスキャフォールドです。
-- 新しい技術的主張は、コミット済みファイル（コード、設定、スクリプト、データセット、ノートブック、または論文関連成果物）に紐づけてください。
-- 履歴的コンテキストを保つため、この README はセクション置換よりも段階的更新を推奨します。
+- これは documentation-first を優先する初期段階のリポジトリスケルトンです。
+- 技術的な主張は、リポジトリ内にコミットされた実体（ファイル）に限定してください。
+- README はインクリメンタルに更新し、履歴的文脈と翻訳の整合性を保ってください。
+- コードを追加する場合は、実装内容、期待される出力、再現手順をこのドキュメントに併記してください。
 
-## トラブルシューティング 🩺
+## Troubleshooting 🩺
 
-### 「まだ実行するものがない」
+### 「まだ実行可能なものがない」
 
-現在の状態では想定どおりです。実行可能ワークフローはまだコミットされていません。
+これは現時点では想定内です。現在、実行可能なスクリプト、設定、ノートブック、データセットはコミットされていません。
 
-### 「翻訳 README があると思っていた」
+### 「翻訳済みREADMEはどこ？」
 
-`i18n/` は存在しますが、言語ファイルがまだない場合があります。作成した言語別 README はここに追加してください。
+`i18n/` ディレクトリを参照してください。対象言語が欠けている場合は、`i18n/README.<lang>.md` を追加し、言語ナビゲーションリンクを同期してください。
 
-### 「プロジェクト名の綴りが場所によって違う」
+### 「タイトルのスペルが異なる」
 
-元説明には `Event-assited` が含まれており（原文のまま保持）、新規テキストでは `Event-assisted` を推奨表記としています。
+上流ノートの元表記は `Event-assited`（`s` が1つ）です。この綴りは引用ブロックとして保持されます。本書では、新規本文では正しい表記の `Event-assisted` を採用しています。
 
-## ロードマップ 🗺️
+### 「`.auto-readme-work/` を使うべき？」
 
-予定しているドキュメント／リポジトリ拡張:
+READMEの作成時に生成されるメタデータ用ディレクトリとして扱ってください。通常の貢献者が使う必要はなく、ドキュメント自動化に取り組む場合のみ参照します。
 
-- 論文引用メタデータの追加（BibTeX と、利用可能になり次第公開リンク）
-- 実装コードと再現可能な実験手順の追加
-- データセット／前処理ドキュメントの追加
-- `i18n/` 配下への多言語 README 追加
-- Issue/PR テンプレートとコントリビューションフロー詳細の追加
+## Roadmap 🗺️
 
-## コントリビューション 🤝
+- 論文メタデータ（公開リンク、DOI、BibTeX 引用ブロック）を追加する
+- 実装エントリポイントと再現可能な利用手順を入手次第追加する
+- データセット、前処理、実験設定のドキュメントを追加する
+- Issue／PR テンプレートとコントリビューション自動化のドキュメントを追加する
+- 多言語 README を英語版と同期し続ける
 
-コントリビューションを歓迎します。
+## Contributing 🤝
 
-専用テンプレートが追加されるまでは、標準的な GitHub ワークフローを使用してください:
+コントリビューションは歓迎します。
 
-1. リポジトリをフォーク
-2. 機能またはドキュメント用のブランチを作成
-3. 明確なメッセージで焦点を絞った変更をコミット
-4. 動機、変更点、検証内容を記載してプルリクエストを作成
+専用テンプレートが追加されるまでは、次の標準フローを使ってください:
 
-新しい技術手順を追加する場合は、可能な限り実行可能コマンドと期待出力を含めてください。
+1. リポジトリをフォークする
+2. 専用ブランチを作る（例: `docs/<topic>`）
+3. 小さく、レビューしやすく、明確なメッセージでコミットする
+4. 動機、変更ファイル、実行した検証コマンドを明記して PR を作成する
 
-## 引用 📚
+技術的な手順を追加する場合は、コマンドレベルの例と想定される出力を含めてください。
 
-このリポジトリでは、引用情報はまだ提供されていません。
+## Citation 📚
 
-このリポジトリが公開済み論文に対応している場合は、このセクションに `BibTeX` エントリと公式公開リンクを追加してください。
+このリポジトリ内には引用情報がまだありません。
 
-## 謝辞 🙏
+対応する公開論文が入手可能になったら、このセクションに `BibTeX` ブロックと公開リンクを追加してください。
 
-現時点で、リポジトリファイルに謝辞は定義されていません。
+## Acknowledgements 🙏
 
-機関支援、共同研究者、または資金提供元を記載する場合は、後続更新でここに追加してください。
+現時点では、リポジトリ内に定義された謝辞はありません。
 
-## ライセンス 📄
+支援者、機関、共同研究者を記載する必要がある場合は、次の更新でここに追加してください。
 
-このプロジェクトは Apache License 2.0 の下で提供されています。[LICENSE](./LICENSE) を参照してください。
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
+
+## License 📄
+
+このプロジェクトは Apache License 2.0 でライセンスされています。[LICENSE](./LICENSE) を参照してください。

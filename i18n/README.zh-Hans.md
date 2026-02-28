@@ -1,38 +1,69 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
+
 # EventHolography
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
-![Status](https://img.shields.io/badge/Status-Documentation--First-orange)
-![Repository](https://img.shields.io/badge/Repository-Early--Stage-lightgrey)
-![i18n](https://img.shields.io/badge/i18n-Directory%20Present-success)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-3776ab?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
+![Focus: Documentation-First](https://img.shields.io/badge/Focus-Documentation--First-FCA121?style=for-the-badge)
+![Repository Stage](https://img.shields.io/badge/Stage-Early--Stage-lightgrey?style=for-the-badge)
+![i18n](https://img.shields.io/badge/i18n-Directory%20Present-2ea44f?style=for-the-badge)
+![Status](https://img.shields.io/badge/Repository-Documentation%20First-0f766e?style=for-the-badge&logo=markdown&logoColor=white)
+![Audience](https://img.shields.io/badge/Audience-Researchers%20%26%20Contributors-22c55e?style=for-the-badge&logo=google-translate&logoColor=white)
 
-用于 **Event-assisted Holographic Imaging** 项目材料的仓库。
+---
 
-> 保留的原始项目描述（规范基准）：
+Event-assisted Holographic Imaging 项目材料的文档仓库。
+
+> 保留原始项目描述（规范基准）：
 > `The repo for the paper Event-assited Holographic Imaging`
 
+## 🧭 快速导航
+
+<a id="overview-"></a>
+| 区块 | 链接 |
+|---|---|
+| 🎯 概览 | [概览](#overview-) |
+| 🗂️ 范围 | [项目结构](#project-structure-) |
+| ✅ 前置条件 | [前置条件](#prerequisites-) |
+| ▶️ 用法 | [用法](#usage-) |
+| 🧪 贡献指南 | [贡献](#contributing-) |
+| ❤️ 支持 | [❤️ 支持](#-support) |
+| 📜 许可 | [许可](#license-) |
+
+<a id="overview-"></a>
 ## 概览 🔍
 
-`EventHolography` 目前是一个以文档为主的仓库，围绕论文/项目主题 **Event-assisted Holographic Imaging** 构建。
+`EventHolography` 是一个 **documentation-first** 仓库，围绕论文/项目主题 **Event-assisted Holographic Imaging** 展示项目资料。
 
-在撰写本文时，仓库主要包含：
+在当前快照中，它定位为入门与沟通中心，而不是可直接运行的软件包。
 
-- 一个最小化的根目录 README（此处为清晰起见已扩展）
-- Apache 2.0 许可证
-- 项目级 `.gitignore`
-- 用于多语言 README 变体的 `i18n/` 目录
+- 规范状态：早期研究文档脚手架
+- 公开重点：论文背景、配置假设与多语言引导
+- 范围：仓库结构、贡献流程，以及未来代码与数据工作的可扩展准备
 
-目前尚未提交源代码、依赖清单或可运行流程。
+<a id="repository-snapshot-"></a>
+## 仓库快照 📈
 
+| 项目 | 说明 | 状态 |
+|---|---|---|
+| `README.md` | 主项目文档 | 已存在并持续维护 |
+| `LICENSE` | 法律条款与复用规则 | Apache License 2.0 |
+| `.gitignore` | 本地/构建产物忽略规则 | 已存在 |
+| `i18n/` | 多语言 README 文件 | 已存在 |
+| `.auto-readme-work/` | README 生成流水线元数据 | 仅在草拟时生成 |
+
+<a id="features-"></a>
 ## 特性 ✨
 
-- 为 Event-assisted 全息成像研究提供清晰的项目定位与范围
-- 采用 Apache 2.0 许可证，便于开放使用与协作
-- 通过 `i18n/` 提供多语言文档布局支持
-- 扩展后的 README 结构，便于后续接入代码/数据
+- 为 Event-assisted Holographic Imaging 项目材料提供清晰的身份定义
+- 使用 Apache 2.0 许可证，便于开放且宽松的复用
+- 支持国际化的 README 布局（`i18n/`）
+- 向用户与贡献者明确传达“documentation-first”状态
+- 为后续补充数据集、脚本、检查点和可复现指南保留兼容结构
 
+<a id="project-structure-"></a>
 ## 项目结构 🗂️
 
 ```text
@@ -40,137 +71,162 @@ EventHolography/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-└── i18n/
+├── i18n/
+└── .auto-readme-work/
 ```
-
-| 路径 | 用途 | 当前状态 |
-|---|---|---|
-| `README.md` | 项目主文档 | 已存在并持续维护 |
-| `LICENSE` | 法律条款 | Apache License 2.0 |
-| `.gitignore` | 本地/构建产物忽略规则 | 已存在 |
-| `i18n/` | 语言特定 README 文件 | 目录已存在；文件会随时间逐步添加 |
 
 说明：
 
-- `i18n/` 已存在，并预留用于存放各语言 README 文件。
-- `.auto-readme-work/` 作为流水线生成的工作上下文目录存在，目前不属于公开项目界面的一部分。
+- `i18n/` 包含 README 的翻译版本，当前包括阿拉伯语、俄语等语言。
+- `.auto-readme-work/` 在本次文档流程中生成，并非对外公开接口。
 
+<a id="prerequisites-"></a>
 ## 前置条件 ✅
 
-当前仓库仅需基础工具：
+当前仓库状态仅需要：
 
-- `git`（用于克隆与跟踪变更）
-- Markdown 查看器（GitHub 界面或本地编辑器）
+- `git` 用于克隆与本地历史分支操作
+- 支持 Markdown 的编辑器或 GitHub 查看器
 
-可选（基于 `.gitignore` 模式的未来预期）：
+假设：
 
-- 后续可能会引入 Python 工具链，但当前已提交文件并不要求 Python 运行时/依赖。
+- 目前无需 Python/Node/Rust 工具链或运行时依赖，因为尚未提交可执行管线。
 
+<a id="installation-"></a>
 ## 安装 🛠️
 
-克隆仓库：
+克隆并进入仓库：
 
 ```bash
 git clone <your-repo-url> EventHolography
 cd EventHolography
 ```
 
-如果你已经在本地有该仓库，请在编辑文档或添加项目资产前，确保已切换到目标分支。
-
-## 使用 ▶️
-
-目前尚无可执行入口。当前使用方式以文档查阅为主：
+可选编辑环境：
 
 ```bash
-# Inspect repository contents
+git checkout -b docs/improve-onboarding
+```
+
+如果你的目标是更新翻译，请同时编辑 `README.md` 与对应的 `i18n/README.xx.md` 文件对。
+
+<a id="usage-"></a>
+## 用法 ▶️
+
+当前尚未提供可执行入口，因此用法主要集中在文档：
+
+```bash
+# 查看仓库内容
 ls -la
 
-# Read project overview
+# 阅读项目概览
 cat README.md
 ```
 
-随着代码、数据集或笔记本加入，本节应补充精确的运行命令。
+当实现资产就绪后，本节将迁移到可运行说明（数据集、模型、train/infer 命令等）。
 
+<a id="configuration-"></a>
 ## 配置 ⚙️
 
-当前尚未定义运行时配置。
+目前尚无运行时配置界面。
 
-未来计划中的配置示例（待实现后补充）：
+代码到位后的计划配置项：
 
-- 数据路径
-- 模型/检查点路径
-- 相机/事件传感器参数
-- 重建/全息实验设置
+- 数据集根目录路径
+- 检查点与输出目录
+- 全息重建参数
+- 事件传感器元数据与校准选项
+- 可复现预设（随机种子、划分、数据增强）
 
+<a id="examples-"></a>
 ## 示例 📌
 
-当前可用的实际示例为仓库检查任务：
+当前仓库快照中的实用示例是仓库检查命令：
 
 ```bash
-# Confirm license
+# 校验许可头
 head -n 5 LICENSE
 
-# Check language folder status
+# 确认语言文档覆盖情况
 ls -la i18n
+
+# 阅读自动生成上下文（可选）
+ls -la .auto-readme-work
 ```
 
-如果你期待训练/推理/演示示例，在当前仓库快照中它们尚不可用。
+若你期待训练/推理示例，本仓库当前尚未包含对应内容。
 
+<a id="development-notes-"></a>
 ## 开发说明 🧪
 
-- 这是一个早期阶段的仓库脚手架。
-- 新增技术性说明应与已提交文件关联（代码、配置、脚本、数据集、笔记本或论文相关材料）。
-- 建议对本 README 进行渐进式更新，而非整段替换，以保留历史上下文。
+- 这是一个以文档为先的早期仓库脚手架。
+- 所有技术性表述应仅基于已提交文件（仓库内文件）建立。
+- 保持 README 增量更新，保留历史上下文并保持翻译一致性。
+- 若你添加代码，请在文档中同步补充实现细节、预期输出与可复现步骤。
 
+<a id="troubleshooting-"></a>
 ## 故障排查 🩺
 
-### “There is nothing to run yet”
+### “当前还没有可运行内容”
 
-这符合当前状态，尚未提交可执行工作流。
+在当前状态下这是预期行为。当前未提交可运行脚本、配置、notebook 或数据集。
 
-### “I expected translated READMEs”
+### “译文 README 在哪里？”
 
-`i18n/` 目录已存在，但可能尚未包含语言文件。可在该目录下按需添加各语言 README。
+查看 `i18n/` 目录。如果某目标语言缺失，请添加 `i18n/README.<lang>.md` 并同步语言导航链接。
 
-### “The project title spelling differs in places”
+### “标题拼写为何不一致？”
 
-原始描述中包含 `Event-assited`（按原文逐字保留）。新文本中优先使用 `Event-assisted` 这一拼写。
+上游旧记录中的原文是 `Event-assited`（少一个 s），出于历史一致性在引用行中保留该拼写。本 README 的新撰写文本使用已纠正的 `Event-assisted`。
 
+### “我应该使用 `.auto-readme-work/` 目录吗？”
+
+应将其视为 README 起草生成的元数据目录。除非参与文档自动化工作，否则标准贡献者通常不需要使用。
+
+<a id="roadmap-"></a>
 ## 路线图 🗺️
 
-计划中的文档与仓库增长方向：
+- 增加论文元信息（出版链接、DOI 和 BibTeX 引用块）
+- 添加实现入口与可复现使用说明，待资源可用后补充
+- 增加数据集、预处理与实验配置文档
+- 增加 issue/PR 模板与贡献自动化说明
+- 保持各语言 README 与英文源文件同步
 
-- 增加论文引用元数据（BibTeX 与发表链接，待可用后添加）
-- 增加实现代码与可复现实验说明
-- 增加数据集/预处理文档
-- 在 `i18n/` 下增加多语言 README 文件
-- 增加 issue/PR 模板与贡献流程说明
-
+<a id="contributing-"></a>
 ## 贡献 🤝
 
-欢迎贡献。
+欢迎提交贡献。
 
-在专用贡献模板添加之前，可采用标准 GitHub 工作流：
+在专用模板加入前，采用标准流程：
 
-1. Fork 本仓库
-2. 创建功能/文档分支
-3. 提交聚焦且信息清晰的变更
-4. 发起 Pull Request，说明动机、改动与验证方式
+1. Fork 仓库
+2. 创建聚焦分支（如 `docs/<topic>`）
+3. 提交小而易审阅的改动并写清楚变更说明
+4. 提交 PR，并说明动机、精确改动文件以及任何校验命令
 
-如果引入新的技术说明，请尽可能附上可运行命令与预期输出。
+若你新增技术说明，请尽量附带命令级示例与预期输出。
 
+<a id="citation-"></a>
 ## 引用 📚
 
-该仓库当前尚未提供引用信息。
+仓库内尚未提供正式引用信息。
 
-如果该仓库对应已发表论文，请在本节补充 `BibTeX` 条目与官方发表链接。
+当对应论文可用时，本节补充 `BibTeX` 区块与出版链接。
 
+<a id="acknowledgements-"></a>
 ## 致谢 🙏
 
-当前仓库文件中尚未定义致谢内容。
+仓库文件中当前未定义致谢内容。
 
-若需感谢机构支持、合作者或资助来源，可在后续更新中补充到此处。
+若需致谢支持机构、合作者或赞助方，请在后续更新中补充。
 
 ## 许可证 📄
 
-本项目基于 Apache License 2.0 许可证发布。详见 [LICENSE](./LICENSE)。
+本项目采用 Apache License 2.0 授权。详见 [LICENSE](./LICENSE)。
+
+
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |

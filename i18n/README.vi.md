@@ -1,38 +1,63 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
 # EventHolography
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
-![Status](https://img.shields.io/badge/Status-Documentation--First-orange)
-![Repository](https://img.shields.io/badge/Repository-Early--Stage-lightgrey)
-![i18n](https://img.shields.io/badge/i18n-Directory%20Present-success)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-3776ab?style=for-the-badge&logo=apache&logoColor=white)](./LICENSE)
+![Focus: Documentation-First](https://img.shields.io/badge/Focus-Documentation--First-FCA121?style=for-the-badge)
+![Repository Stage](https://img.shields.io/badge/Stage-Early--Stage-lightgrey?style=for-the-badge)
+![i18n](https://img.shields.io/badge/i18n-Directory%20Present-2ea44f?style=for-the-badge)
+![Status](https://img.shields.io/badge/Repository-Documentation%20First-0f766e?style=for-the-badge&logo=markdown&logoColor=white)
+![Audience](https://img.shields.io/badge/Audience-Researchers%20%26%20Contributors-22c55e?style=for-the-badge&logo=google-translate&logoColor=white)
 
-Kho lưu trữ dành cho các tài liệu của dự án **Event-assisted Holographic Imaging**.
+---
 
-> Mô tả dự án gốc được giữ nguyên (làm cơ sở chuẩn):
+Kho lưu trữ cho các tài liệu dự án **Event-assisted Holographic Imaging**.
+
+> Bản mô tả dự án gốc được giữ nguyên (chuẩn mực gốc):
 > `The repo for the paper Event-assited Holographic Imaging`
+
+## 🧭 Điều hướng nhanh
+
+| Khu vực | Liên kết |
+|---|---|
+| 🎯 Tổng quan | [Tổng quan](#tổng-quan-) |
+| 🗂️ Phạm vi | [Cấu trúc dự án](#cấu-trúc-dự-án-) |
+| ✅ Tiêu chuẩn ban đầu | [Yêu cầu](#yêu-cầu-) |
+| ▶️ Cách sử dụng | [Cách sử dụng](#cách-sử-dụng-) |
+| 🧪 Đóng góp | [Đóng góp](#đóng-góp-) |
+| ❤️ Support | [❤️ Support](#-support) |
+| 📜 Giấy phép | [Giấy phép](#giấy-phép-) |
 
 ## Tổng quan 🔍
 
-`EventHolography` hiện là một kho lưu trữ ưu tiên tài liệu, tập trung vào chủ đề bài báo/dự án **Event-assisted Holographic Imaging**.
+`EventHolography` là một kho lưu trữ **documentation-first** dành cho chủ đề tài liệu của dự án **Event-assisted Holographic Imaging**.
 
-Tại thời điểm viết, kho lưu trữ chủ yếu bao gồm:
+Tính đến thời điểm snapshot của kho này, nó được thiết kế như một trung tâm giới thiệu và truyền thông hơn là một package có thể chạy ngay.
 
-- README tối giản ở thư mục gốc (được mở rộng ở đây để rõ ràng hơn)
-- Giấy phép Apache 2.0
-- Tệp `.gitignore` cấp dự án
-- Thư mục `i18n/` cho các biến thể README đa ngôn ngữ
+- Trạng thái chuẩn: khung tài liệu nghiên cứu giai đoạn đầu
+- Mục tiêu công khai: bối cảnh bài báo, giả định thiết lập, và hướng dẫn đa ngôn ngữ
+- Phạm vi: cấu trúc kho, quy trình đóng góp, và mức sẵn sàng cho đóng góp mã dữ liệu trong tương lai
 
-Hiện chưa có mã nguồn, tệp khai báo phụ thuộc hay pipeline chạy được nào được commit.
+## Bức tranh nhanh về kho 📈
+
+| Mục | Chi tiết | Trạng thái |
+|---|---|---|
+| `README.md` | Tài liệu dự án chính | Có và đang được duy trì tích cực |
+| `LICENSE` | Điều khoản pháp lý và chính sách tái sử dụng | Apache License 2.0 |
+| `.gitignore` | Quy tắc bỏ qua cho các tệp địa phương/build | Có |
+| `i18n/` | Tệp README theo ngôn ngữ | Có |
+| `.auto-readme-work/` | Siêu dữ liệu pipeline cho việc sinh README | Tạo ra trong quá trình soạn thảo |
 
 ## Tính năng ✨
 
-- Định danh và phạm vi dự án rõ ràng cho nghiên cứu holography có hỗ trợ dữ liệu sự kiện
-- Giấy phép Apache 2.0 cho việc sử dụng mở và đóng góp
-- Bố cục tài liệu sẵn sàng cho đa ngôn ngữ thông qua `i18n/`
-- Cấu trúc README được mở rộng để phục vụ việc bổ sung mã/dữ liệu trong tương lai
+- Xác định rõ bản sắc cho tài liệu dự án Event-assisted Holographic Imaging
+- Giấy phép Apache 2.0 cho việc tái sử dụng mở và linh hoạt
+- Bố cục README sẵn sàng cho quốc tế hóa qua `i18n/`
+- Truyền đạt rõ trạng thái documentation-first cho người dùng và người đóng góp
+- Cấu trúc tương thích với việc bổ sung sau này cho datasets, scripts, checkpoints và hướng dẫn tái lập
 
 ## Cấu trúc dự án 🗂️
 
@@ -41,46 +66,46 @@ EventHolography/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-└── i18n/
+├── i18n/
+└── .auto-readme-work/
 ```
 
-| Đường dẫn | Mục đích | Trạng thái hiện tại |
-|---|---|---|
-| `README.md` | Tài liệu chính của dự án | Có sẵn và đang được duy trì tích cực |
-| `LICENSE` | Điều khoản pháp lý | Apache License 2.0 |
-| `.gitignore` | Quy tắc bỏ qua cho các tệp cục bộ/tạo dựng | Có sẵn |
-| `i18n/` | Các tệp README theo từng ngôn ngữ | Thư mục đã tồn tại; tệp có thể được thêm dần theo thời gian |
+Ghi chú:
 
-Lưu ý:
+- `i18n/` chứa các phiên bản README đã dịch, bao gồm tiếng Ả Rập, tiếng Nga và các ngôn ngữ khác.
+- `.auto-readme-work/` được tạo ra trong workflow tài liệu và không phải là giao diện công khai chuẩn của kho.
 
-- `i18n/` đã tồn tại và được dành riêng cho các tệp README theo ngôn ngữ.
-- `.auto-readme-work/` tồn tại như ngữ cảnh làm việc do pipeline tạo ra và hiện không thuộc bề mặt công khai của dự án.
+## Yêu cầu ✅
 
-## Điều kiện tiên quyết ✅
+Trạng thái hiện tại của kho chỉ cần:
 
-Trạng thái hiện tại của kho lưu trữ chỉ yêu cầu công cụ cơ bản:
+- `git` để clone và làm việc lịch sử/các nhánh nội bộ
+- Một trình soạn thảo hỗ trợ Markdown hoặc môi trường xem GitHub
 
-- `git` (để clone và theo dõi thay đổi)
-- Trình xem Markdown (giao diện GitHub hoặc trình soạn thảo cục bộ)
+Giả định:
 
-Tùy chọn (định hướng tương lai dựa trên các mẫu trong `.gitignore`):
-
-- Có thể sẽ bổ sung công cụ Python về sau, nhưng hiện tại các tệp đã commit của dự án chưa yêu cầu runtime/phụ thuộc Python.
+- Không yêu cầu toolchain Python/Node/Rust hay phụ thuộc model/runtime vào lúc này vì chưa có pipeline thực thi nào được cam kết.
 
 ## Cài đặt 🛠️
 
-Clone kho lưu trữ:
+Clone và vào kho:
 
 ```bash
 git clone <your-repo-url> EventHolography
 cd EventHolography
 ```
 
-Nếu bạn đã có kho lưu trữ ở máy cục bộ, hãy đảm bảo đang ở đúng nhánh mục tiêu trước khi chỉnh sửa tài liệu hoặc thêm tài nguyên dự án.
+Môi trường chọn lọc cho chỉnh sửa:
 
-## Sử dụng ▶️
+```bash
+git checkout -b docs/improve-onboarding
+```
 
-Hiện chưa có entrypoint thực thi. Cách sử dụng hiện tại tập trung vào tài liệu:
+Nếu mục tiêu của bạn là cập nhật bản dịch, hãy chỉnh sửa cả `README.md` lẫn tệp `i18n/README.xx.md` tương ứng.
+
+## Cách sử dụng ▶️
+
+Hiện tại chưa có entrypoint thực thi, nên cách sử dụng đang tập trung cho tài liệu:
 
 ```bash
 # Inspect repository contents
@@ -90,88 +115,102 @@ ls -la
 cat README.md
 ```
 
-Khi mã nguồn, bộ dữ liệu hoặc notebook được thêm vào, phần này nên được mở rộng bằng các lệnh chạy chính xác.
+Khi các thành phần triển khai xuất hiện, phần này nên chuyển thành hướng dẫn chạy lệnh (dataset, model, train/infer).
 
 ## Cấu hình ⚙️
 
-Hiện chưa có cấu hình runtime nào được định nghĩa.
+Hiện tại chưa có bề mặt cấu hình runtime.
 
-Ví dụ cấu hình dự kiến trong tương lai (sẽ thêm khi có triển khai):
+Các khu vực cấu hình dự kiến (khi có mã):
 
-- Đường dẫn dữ liệu
-- Đường dẫn model/checkpoint
-- Tham số camera/cảm biến sự kiện
-- Thiết lập thí nghiệm tái tạo/holography
+- Đường dẫn gốc dataset
+- Thư mục checkpoint và output
+- Tham số tái tạo holographic
+- Metadata cảm biến sự kiện và lựa chọn hiệu chỉnh
+- Preset tái lập (seed, split, augmentations)
 
 ## Ví dụ 📌
 
-Các ví dụ thực tế hiện tại là các tác vụ kiểm tra kho lưu trữ:
+Các ví dụ thực tế trong snapshot này là các lệnh khám phá kho:
 
 ```bash
-# Confirm license
+# Confirm license header
 head -n 5 LICENSE
 
-# Check language folder status
+# Verify language documentation coverage
 ls -la i18n
+
+# Read auto-generated context (optional)
+ls -la .auto-readme-work
 ```
 
-Nếu bạn đang chờ ví dụ huấn luyện/suy luận/demo, chúng hiện chưa có trong ảnh chụp kho lưu trữ này.
+Nếu bạn đang mong đợi ví dụ huấn luyện/suy diễn, kho hiện tại chưa có chúng.
 
 ## Ghi chú phát triển 🧪
 
-- Đây là một khung kho lưu trữ ở giai đoạn sớm.
-- Hãy gắn các khẳng định kỹ thuật mới với các tệp đã commit (mã, cấu hình, script, bộ dữ liệu, notebook hoặc hiện vật của bài báo).
-- Nên cập nhật README này theo hướng tăng dần thay vì thay toàn bộ phần, để giữ lại ngữ cảnh lịch sử.
+- Đây là một scaffold kho ở giai đoạn đầu với ưu tiên documentation-first.
+- Giữ các tuyên bố kỹ thuật gắn chặt với tài sản đã được commit trong cây mã.
+- Cập nhật README theo từng bước, duy trì bối cảnh lịch sử và tính nhất quán bản dịch.
+- Nếu bạn thêm mã, hãy đặt chi tiết triển khai, đầu ra mong đợi và bước tái lập cùng tài liệu này.
 
 ## Khắc phục sự cố 🩺
 
-### “Chưa có gì để chạy”
+### “Hiện chưa có gì để chạy"
 
-Điều này là bình thường ở trạng thái hiện tại. Chưa có quy trình thực thi nào được commit.
+Đây là điều đã dự kiến trong trạng thái hiện tại. Chưa có script, config, notebook hay dataset chạy được nào được commit.
 
-### “Tôi tưởng đã có README dịch”
+### “Các README đã dịch ở đâu?”
 
-`i18n/` đã tồn tại nhưng có thể chưa có tệp ngôn ngữ. Hãy thêm các tệp README theo ngôn ngữ vào đó khi được biên soạn.
+Xem thư mục `i18n/`. Nếu thiếu ngôn ngữ mục tiêu, thêm `i18n/README.<lang>.md` và đồng bộ các liên kết điều hướng ngôn ngữ.
 
-### “Chính tả tiêu đề dự án khác nhau ở một số chỗ”
+### “Tại sao tên tiêu đề lại khác nhau?”
 
-Mô tả gốc có `Event-assited` (được giữ nguyên từng ký tự). Cách viết ưu tiên trong nội dung mới là `Event-assisted`.
+Cụm từ trong ghi chú gốc là `Event-assited` (chỉ một chữ `s`), được giữ nguyên trong dòng legacy có trích dẫn. README này dùng chữ đúng `Event-assisted` trong nội dung mới.
+
+### “Nên dùng thư mục `.auto-readme-work/` không?”
+
+Xem đây là siêu dữ liệu sinh README đã tạo ra. Nó thường không cần thiết cho người đóng góp chuẩn, trừ khi họ làm tài liệu tự động.
 
 ## Lộ trình 🗺️
 
-Kế hoạch mở rộng tài liệu và kho lưu trữ:
-
-- Thêm metadata trích dẫn bài báo (BibTeX và liên kết công bố khi có)
-- Thêm mã triển khai và hướng dẫn thí nghiệm có thể tái lập
-- Thêm tài liệu bộ dữ liệu/tiền xử lý
-- Thêm các tệp README đa ngôn ngữ dưới `i18n/`
-- Thêm mẫu issue/PR và chi tiết quy trình đóng góp
+- Thêm metadata bài báo (liên kết công bố, DOI, và khối trích dẫn BibTeX)
+- Thêm entrypoint triển khai và hướng dẫn sử dụng có thể tái lập khi có sẵn
+- Bổ sung tài liệu dataset, tiền xử lý và cấu hình thí nghiệm
+- Thêm mẫu issue/PR và tài liệu tự động hóa đóng góp
+- Duy trì tính đồng bộ giữa các README đa ngôn ngữ và bản tiếng Anh
 
 ## Đóng góp 🤝
 
-Mọi đóng góp đều được chào đón.
+Đóng góp được hoan nghênh.
 
-Cho đến khi có mẫu đóng góp chuyên dụng, hãy dùng quy trình GitHub tiêu chuẩn:
+Cho đến khi có template chuyên dụng, dùng workflow chuẩn sau:
 
-1. Fork kho lưu trữ
-2. Tạo nhánh tính năng/tài liệu
-3. Commit các thay đổi tập trung với thông điệp rõ ràng
-4. Mở pull request mô tả động lực, thay đổi và cách xác thực
+1. Fork repository
+2. Tạo nhánh chuyên biệt (`docs/<topic>`)
+3. Commit các thay đổi nhỏ, dễ review với thông điệp rõ ràng
+4. Mở PR với lý do, danh sách file thay đổi chính xác, và lệnh xác minh nếu có
 
-Nếu thêm hướng dẫn kỹ thuật mới, hãy kèm các lệnh có thể chạy và kết quả mong đợi nếu có thể.
+Nếu bạn thêm hướng dẫn kỹ thuật, hãy đưa ví dụ mức lệnh và đầu ra mong đợi kèm theo.
 
 ## Trích dẫn 📚
 
-Thông tin trích dẫn hiện chưa được cung cấp trong kho lưu trữ này.
+Chi tiết trích dẫn hiện chưa có trong repository.
 
-Nếu kho lưu trữ này tương ứng với một bài báo đã xuất bản, hãy thêm mục `BibTeX` và liên kết công bố chính thức trong phần này.
+Khi bài báo tương ứng được công bố, thêm một khối `BibTeX` và liên kết công bố vào phần này.
 
 ## Lời cảm ơn 🙏
 
-Hiện chưa có phần lời cảm ơn nào được định nghĩa trong các tệp của kho lưu trữ.
+Hiện chưa có lời cảm ơn nào được định nghĩa trong các tệp dự án.
 
-Nếu bạn có hỗ trợ từ tổ chức, cộng tác viên hoặc nguồn tài trợ cần ghi nhận, hãy bổ sung tại đây trong lần cập nhật tiếp theo.
+Nếu có cơ quan, tổ chức hoặc cộng tác viên cần ghi nhận, hãy bổ sung trong lần cập nhật tiếp theo.
 
 ## Giấy phép 📄
 
 Dự án này được cấp phép theo Apache License 2.0. Xem [LICENSE](./LICENSE).
+
+
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
